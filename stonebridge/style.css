@@ -1,0 +1,273 @@
+/* css for header starts */
+header{
+   position: fixed;
+   background-color: #0c0d0e;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+   display: inline;
+   z-index: 25;
+}
+.title a span{
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+   margin: 0px;
+   top: 25px;
+   position: relative;
+   left: 5%;
+   }
+nav ul li{
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   left: 65%;
+   bottom: 15px;
+}
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   white-space: nowrap;
+   margin: 10px;
+   padding: 7px 5px;
+}
+nav ul li a:hover{
+   color: #5584b3;
+}
+
+/* css for welome banner starts */
+.home img{
+   max-width: 2000px;
+   width: 100%;
+   margin-top: 60px;
+   height: 400px;
+   
+}
+.home .text{
+   position: absolute;
+   top: 30%;
+   background-color: #161522e5;
+   color: whitesmoke;
+   font-size: 20px;
+   padding: 10px 10px;
+   border-radius: 10px;
+   left: 20px;
+   
+}
+.home .text span{
+   font-size: 1.5em;
+   color: #5584b3;
+}
+.home .text em{
+   font-size: 0.5em;
+   margin-left: 25%;
+   top: 15px;
+}
+
+/* css for class main starts */
+.main{
+   width: 100%;
+   max-width: 1200px;
+   margin: 80px auto;
+   padding: 0 40px;
+   box-sizing: border-box;
+}
+.main h1{
+   text-align: center;
+   font-size: 40px;
+}
+.main article{
+   margin: 50px;
+   text-align: justify;
+}
+.images{
+   text-align: center;
+   margin: 80px 0;
+   white-space: nowrap;
+}
+.images li{
+   display: inline-block;
+   width: 40%;
+   margin: 20px 5%;
+}
+.images img{
+   max-width: 100%;
+}
+.main .images img{
+   width: 400px;
+   height: 400px;
+}
+.main .images span{
+   font-size: 35px;
+}
+.main .images li p{
+   margin: 50px;
+   display: inline;
+}
+
+/* css for form in contact page */
+form{
+   text-align: center;
+   background-color: #1c2630;
+   /* margin: 0px 0px; */
+   padding: 50px 0px;
+   width: 100%;
+   
+}
+form input{
+   border-radius: 27px;
+   border: white solid 4px;
+   margin: 0px 0;
+   padding: 5px 5px;
+}
+form textarea{
+   border: white solid 4px;
+   border-radius: 4px;
+}
+form ::placeholder{
+   font-size: 10px;
+   font-family: monospace;
+}
+form input:focus{
+   border: 2px solid #c2ba7e;
+   outline: none;
+}
+form textarea:focus{
+   border: 2px solid #c2ba7e;
+   outline: none;
+}
+form input:valid{
+   border: 2px solid #7cdd99;
+}
+
+/* css for info */
+.info{
+   text-align: center;
+}
+.info h1{
+   font-size: 35px;
+}
+.info p{
+   font-size: 20px;
+}
+
+/* css for footer */
+footer{
+   background-color: #0e0e0c;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}  
+footer a{
+   color: white;
+   text-decoration: none;
+}
+footer a:hover{
+   color: #5584b3;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px){
+   nav ul li{
+      left: 55%;
+   } 
+}
+@media screen and (max-width: 1000px) {
+   nav ul li{
+      left: 45%;
+   }
+   .images li{
+      display: block;
+      width: 100%;
+      margin: 40px 0px;
+   } 
+   .images{
+      margin: 40px 0;
+   }  
+}
+@media screen and (max-width: 850px) {
+   nav ul li{
+      left: 40%;
+   }
+   .home .text span{
+      font-size: 1em;
+      color: #ffffff;
+   }
+  }
+@media screen and (max-width: 750px) {
+   nav ul li{
+      display: inline;
+      position: relative;
+      top: 20px;
+      left: 30px;
+      margin: 10px;
+      padding: 10px 7px;
+      
+   }
+   .title a{
+      display: block;
+      font-size: 50px;
+      margin-left: 40px;
+      margin-top: -10px;
+   }
+   header{
+      display: block;
+      padding-bottom: 15px;
+      text-align: left;
+   }
+}
+@media screen and (max-width: 660px) {
+   nav ul li{
+      display: inline;
+      position: relative;
+      bottom: -10px;
+      top: 20px;
+      margin: 8px;
+      padding: 5px 0px;
+      
+   }
+   .title a{
+      top: -10px;
+      margin-left: 1px;
+   }
+   header{
+      padding-bottom: 15px;
+      text-align: left;
+   }
+}
+@media screen and (max-width: 620px) {
+   .title a{
+      font-size: 40px;
+      margin-left: 40px;
+      margin-top: -10px;
+   }
+   nav ul li{
+      top: 20px;
+      margin-left: -3px;
+   }
+}
+@media screen and (max-width: 540px) {
+   .title a{
+      margin-left: 10px;
+   }
+   nav ul li{
+      margin-left: -15px;
+   }
+}
+@media screen and (max-width: 500px){
+   .home .text{
+      position: relative;
+      border-radius: 0px;
+      left: 0px;
+      padding: 1px 1px;
+      text-align: center;
+      top: -3px;
+   }
+   .home .text em{
+      margin-left: 10%;
+   }
+   .home .text h1{
+      margin: 1px 1px;
+   }
+}
